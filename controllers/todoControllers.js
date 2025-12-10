@@ -65,7 +65,7 @@ export let updateTodoController = async(req,res)=>{
 
     catch(error)
     {
-        return res.status(500).json({success: false, message: "Server error"});
+        return res.status(500).json({success: false, message: "Server error", error: error});
     }
 }
 
